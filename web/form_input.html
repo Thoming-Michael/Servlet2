@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <title>User Input Form</title>
+</head>
+ 
+<body>
+<h2>Automobile Input Form</h2>
+<form method="get" action="echo">
+  <fieldset>
+    <legend>Vehicle Details</legend>
+    VIN: <input type="text" name="vin_number" /><br /><br />
+    Model Year: <select name = "year">
+      <option value="2019">2019</option>
+      <option value="2018">2018</option>
+      <option value="2017">2017</option>
+      <option value="2016">2016</option>
+      <option value="2015">2015</option>
+      <option value="2014">2014</option>
+      <option value="2013">2013</option>
+      <option value="2012">2012</option>
+      <option value="2011">2011</option>
+      <option value="2010">2010</option>
+      <option value="2009">2009</option>
+      <option value="2008">2008</option>
+      <option value="2007">2007</option>
+      <option value="2006">2006</option>
+      <option value="2005">2005</option>
+      <option value="2004">2004</option>
+      <option value="2003">2003</option>
+      <option value="2002">2002</option>      
+    </select><br /><br />
+
+    Make: <input type="text" name="make" /><br /><br />
+    Model: <input type="text" name="model" /><br /><br />
+    Body Style: <input type="radio" name="bodystyle" value="c" checked />Coupe
+                <input type="radio" name="bodystyle" value="s" />Sedan
+                <input type="radio" name="bodystyle" value="t" />Truck
+                <input type="radio" name="bodystyle" value="u" />SUV
+                <input type="radio" name="bodystyle" value="v" />Van
+                <input type="radio" name="bodystyle" value="m" />Mini-Van
+                <input type="radio" name="bodystyle" value="p" />Compact<br /><br />
+  </fieldset>
+ 
+  <fieldset>
+    <legend>Condition</legend>
+    <input type="checkbox" name="condition" value="good" checked />Good
+    <input type="checkbox" name="condition" value="fair" />Fair
+    <input type="checkbox" name="condition" value="poor" />Poor
+  </fieldset>
+ 
+  <fieldset>
+    <legend>Instruction</legend>
+    <textarea rows="5" cols="30" name="instruction">Describe any mechanical problems or body damage...</textarea>
+  </fieldset>
+ 
+  <input type="hidden" name="secret" value="888" />
+  <input type="submit" value="SEND" />
+  <input type="reset" value="CLEAR" />
+</form>
+    </body>
+</html>
